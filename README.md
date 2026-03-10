@@ -5,7 +5,8 @@
 
 Official PyTorch implementation of the paper **"Struct-VReID: Semantics-Guided Visual Grounding for Occluded Text-to-Video Person Re-identification"**. 
 
-> **Authors:** Rui Sun, Yi Long, Jicheng Shen, Jingjing Wu, Wei Jia
+[^1]: **Authors:** Rui Sun, Yi Long, Jicheng Shen, Jingjing Wu, Wei Jia
+
 
 ## 💡 Introduction
 
