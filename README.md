@@ -5,7 +5,7 @@
 
 Official PyTorch implementation of the paper **"Struct-VReID: Semantics-Guided Visual Grounding for Occluded Text-to-Video Person Re-identification"**. 
 
-> **Authors:** Rui Sun, Xiaolu Yu, Fei Wang, Zikai Da, Yifan Zhang, Jun Gao
+> **Authors:** Rui Sun, Yi Long, Jicheng Shen, Jingjing Wu, Wei Jia
 
 ## 💡 Introduction
 
@@ -34,6 +34,24 @@ Extensive experiments on TVPReid benchmarks demonstrate the superiority of Struc
 | **TVPReid-PRID** | - | 20.67% | 12.52% |
 | **TVPReid-iLIDs** | 13.38% | - | 4.31% |
 | **TVPReid-Duke** | **30.63%** | **21.33%** | - |
+
+## 📂 Data Preparation
+Please download the TVPReid datasets (PRID, iLIDs, Duke) from the official sources. Organize the directory structure as follows:
+
+```bash
+data/
+├── TVPReid-PRID/
+├── TVPReid-iLIDs/
+└── TVPReid-Duke/
+```
+
+## 🔍 Evaluation & Zero-Shot Generalization
+To evaluate the trained model, we provide a robust testing script cross_test.py that automatically filters out mismatched classifier heads for safe Cross-Domain Evaluation.
+
+```bash
+# Example: Evaluate Duke-trained model on PRID dataset
+python cross_test.py --name test_duke_to_prid --dataset_name TVPReid-PRID --resume_ckpt_file logs/TVPReid-Duke/20260105_120238_iira/best.pth --loss_names 'sdm+mlm+id+struct'
+```
 
 ## ⚙️ Installation
 
