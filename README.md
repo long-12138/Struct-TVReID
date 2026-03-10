@@ -3,15 +3,15 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/struct-vreid-semantics-guided-visual/text-to-video-person-re-identification-on)](https://paperswithcode.com/sota/text-to-video-person-re-identification-on)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[cite_start]Official PyTorch implementation of the paper **"Struct-VReID: Semantics-Guided Visual Grounding for Occluded Text-to-Video Person Re-identification"**[cite: 20]. 
+**"Struct-VReID: Semantics-Guided Visual Grounding for Occluded Text-to-Video Person Re-identification"**. 
 
-> [cite_start]**Authors:** Rui Sun, Xiaolu Yu, Fei Wang, Zikai Da, Yifan Zhang, Jun Gao [cite: 21]
+> **Authors:** Rui Sun, Xiaolu Yu, Fei Wang, Zikai Da, Yifan Zhang, Jun Gao 
 
 ## 💡 Introduction
 
-[cite_start]Existing Text-to-Video Person Re-identification (T2V ReID) methods are often constrained by coarse global matching paradigms, making them highly susceptible to severe visual noise and occlusions[cite: 24, 25, 26]. [cite_start]To bridge this gap, we propose **Struct-VReID**, a novel framework that advances the paradigm from global matching to structure-aware fine-grained grounding[cite: 26]. 
+Existing Text-to-Video Person Re-identification (T2V ReID) methods are often constrained by coarse global matching paradigms, making them highly susceptible to severe visual noise and occlusions. To bridge this gap, we propose **Struct-VReID**, a novel framework that advances the paradigm from global matching to structure-aware fine-grained grounding. 
 
-[cite_start]Struct-VReID introduces a **Hierarchical Semantic Parsing (LLM-HSP)** module to decompose unstructured text into a semantic tree[cite: 27]. [cite_start]Guided by this topology, our **Semantics-Guided Visual Grounding (SGVG)** mechanism actively searches for visible regions across the spatio-temporal domain to filter out occlusion noise[cite: 28]. [cite_start]Finally, a **Multi-Granularity Structural Consistency Alignment (MSCA)** objective ensures geometric and semantic correspondence between retrieved video parts and descriptions via an explicit geometric centroid constraint ($\mathcal{L}_{geo}$)[cite: 29, 215].
+Struct-VReID introduces a **Hierarchical Semantic Parsing (LLM-HSP)** module to decompose unstructured text into a semantic tree. Guided by this topology, our **Semantics-Guided Visual Grounding (SGVG)** mechanism actively searches for visible regions across the spatio-temporal domain to filter out occlusion noiseFinally, a **Multi-Granularity Structural Consistency Alignment (MSCA)** objective ensures geometric and semantic correspondence between retrieved video parts and descriptions via an explicit geometric centroid constraint ($\mathcal{L}_{geo}$).
 
 ![Architecture Diagram](https://github.com/long-12138/Struct-VReID/blob/main/figures/architecture.png) ## 🏆 Main Results
 
@@ -21,7 +21,7 @@ Extensive experiments on TVPReid benchmarks demonstrate the superiority of Struc
 
 | Dataset | Rank-1 | Rank-5 | Rank-10 | mAP | MdR |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| [cite_start]**TVPReid-PRID** [cite: 382] | [cite_start]**66.55%** [cite: 30] | [cite_start]89.79% [cite: 382] | [cite_start]97.54% [cite: 382] | [cite_start]76.87% [cite: 382] | [cite_start]1.00 [cite: 382] |
+| [cite_start]**TVPReid-PRID**  | [cite_start]**66.55%** [cite: 30] | [cite_start]89.79% [cite: 382] | [cite_start]97.54% [cite: 382] | [cite_start]76.87% [cite: 382] | [cite_start]1.00 [cite: 382] |
 | [cite_start]**TVPReid-iLIDs** [cite: 382] | [cite_start]**40.67%** [cite: 30] | [cite_start]66.00% [cite: 382] | [cite_start]82.67% [cite: 382] | [cite_start]53.59% [cite: 382] | [cite_start]3.00 [cite: 382] |
 | [cite_start]**TVPReid-Duke** [cite: 386] | [cite_start]**51.58%** [cite: 30] | [cite_start]78.36% [cite: 386] | [cite_start]84.08% [cite: 386] | [cite_start]63.74% [cite: 386] | [cite_start]1.00 [cite: 386] |
 
