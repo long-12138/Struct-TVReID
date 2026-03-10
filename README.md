@@ -36,7 +36,7 @@ Extensive experiments on TVPReid benchmarks demonstrate the superiority of Struc
 | **TVPReid-Duke** | **30.63%** | **21.33%** | - |
 
 ## 📂 Data Preparation
-Please download the TVPReid datasets (PRID, iLIDs, Duke) from the official sources. Organize the directory structure as follows:
+Please download the TVPReid datasets [PRID, iLIDs, Duke](https://github.com/NjtechCVLab/TVPReid-Dataset). Organize the directory structure as follows:
 
 ```bash
 data/
@@ -55,6 +55,8 @@ python cross_test.py
 
 ## 🙏 Acknowledgements
 We sincerely thank the open-source communities and the authors of [CLIP](https://github.com/openai/CLIP) and [IRRA](https://github.com/anosorae/IRRA) for their brilliant foundational works.
+
+We would like to thank the **NjtechCVLab** team for their pioneering work and for providing the [**TVPReid**](https://github.com/NjtechCVLab/TVPReid-Dataset) dataset. 
 
 ## ⚙️ Installation
 
