@@ -4,20 +4,17 @@
 
 Official PyTorch implementation of the paper **"Struct-TVReID: LLM-Driven Structural Grounding for Text-to-Video Person Re-identification"**. 
 
-> **Authors:** Rui Sun, Yi Long, Jicheng Shen, Jingjing Wu, Wei Jia
+> **Authors:** Rui Sun, Yi Long, Jicheng Shen, Haohao Wang, Jingjing Wu, Wei Jia
 
 
 ## 💡 Introduction
-
-Existing Text-to-Video Person Re-identification (T2V ReID) methods are often constrained by coarse global matching paradigms, making them highly susceptible to severe visual noise and occlusions. To bridge this gap, we propose **Struct-VReID**, a novel framework that advances the paradigm from global matching to structure-aware fine-grained grounding. 
-
-Struct-VReID introduces a **Hierarchical Semantic Parsing (LLM-HSP)** module to decompose unstructured text into a semantic tree. Guided by this topology, our **Semantics-Guided Visual Grounding (SGVG)** mechanism actively searches for visible regions across the spatio-temporal domain to filter out occlusion noise. Finally, a **Multi-Granularity Structural Consistency Alignment (MSCA)** objective ensures geometric and semantic correspondence between retrieved video parts and descriptions via an explicit geometric centroid constraint.
+Struct-TVReID introduces a **Hierarchical Semantic Parsing (LLM-HSP)** module to decompose unstructured text into a semantic tree. Guided by this topology, our **Semantics-Guided Visual Grounding (SGVG)** mechanism actively searches for visible regions across the spatio-temporal domain to filter out occlusion noise. Finally, a **Multi-Granularity Structural Consistency Alignment (MSCA)** objective ensures geometric and semantic correspondence between retrieved video parts and descriptions via an explicit geometric centroid constraint.
 
 ![Architecture Diagram](Struct-VReID_Safe_Version.png) 
 
 ## 🏆 Main Results
 
-Extensive experiments on TVPReid benchmarks demonstrate the superiority of Struct-VReID, especially under severe occlusions and cross-domain Zero-Shot generalization scenarios.
+Extensive experiments on TVPReid benchmarks demonstrate the superiority of Struct-TVReID, especially under severe occlusions and cross-domain Zero-Shot generalization scenarios.
 
 ### In-Domain Performance
 
