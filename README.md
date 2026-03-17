@@ -1,11 +1,10 @@
-# Struct-VReID: Semantics-Guided Visual Grounding for Occluded Text-to-Video Person Re-identification
-
+# Struct-TVReID: LLM-Driven Structural Grounding for Text-to-Video Person Re-identification
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/struct-vreid-semantics-guided-visual/text-to-video-person-re-identification-on)](https://paperswithcode.com/sota/text-to-video-person-re-identification-on)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Official PyTorch implementation of the paper **"Struct-VReID: Semantics-Guided Visual Grounding for Occluded Text-to-Video Person Re-identification"**. 
+Official PyTorch implementation of the paper **"Struct-TVReID: LLM-Driven Structural Grounding for Text-to-Video Person Re-identification"**. 
 
-[^1]: **Authors:** Rui Sun, Yi Long, Jicheng Shen, Jingjing Wu, Wei Jia
+> **Authors:** Rui Sun, Yi Long, Jicheng Shen, Jingjing Wu, Wei Jia
 
 
 ## 💡 Introduction
