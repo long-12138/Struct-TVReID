@@ -14,6 +14,7 @@ Struct-TVReID introduces a **Hierarchical Semantic Parsing (LLM-HSP)** module to
 
 ## 🤖 LLM-HSP
 Step1.You can choose to deploy the large model locally or use an online large model
+
 Step2.
 ```bash
 # If you wish to use this module 
