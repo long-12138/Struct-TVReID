@@ -23,7 +23,7 @@ python process_local_qwen.py
 
 ## 🏆 Main Results
 
-Extensive experiments on TVPReid benchmarks demonstrate the superiority of Struct-TVReID, especially under severe occlusions and cross-domain Zero-Shot generalization scenarios.
+Extensive experiments on TVPReid benchmarks demonstrate the superiority of Struct-TVReID, especially under severe occlusions.
 
 ### In-Domain Performance
 
